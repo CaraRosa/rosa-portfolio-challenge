@@ -6,10 +6,12 @@ a {
     background-color: darkgrey;
     font-family:'Monaco', 'Times New Roman', 'Verdana', 'Lucida Console', 'Arial', sans-serif;
     color: darkblue;
+    
 }
 
 .header-elements h1 {
     display: inline-block;
+    
 }
 
 nav {
@@ -18,5 +20,8 @@ nav {
     float: right;
     font-family:'Monaco', 'Times New Roman', 'Verdana', 'Lucida Console', 'Arial', sans-serif;
     font-size: 20px;
+}
+
+li {
     list-style-type: none;
 }

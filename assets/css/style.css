@@ -7,3 +7,16 @@ a {
     font-family:'Monaco', 'Times New Roman', 'Verdana', 'Lucida Console', 'Arial', sans-serif;
     color: darkblue;
 }
+
+.header-elements h1 {
+    display: inline-block;
+}
+
+nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family:'Monaco', 'Times New Roman', 'Verdana', 'Lucida Console', 'Arial', sans-serif;
+    font-size: 20px;
+    list-style-type: none;
+}

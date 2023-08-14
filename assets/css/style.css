@@ -1,12 +1,19 @@
+/* Universal Selector */
+/* Gets rid of the margin around the NavBar */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
+
+/* Element Selector */
+/* Gets rid of the underline style on the three links */
 a {
     text-decoration: none;
 }
 
+/* Class Selector */
+/* Sets the background color, adds fonts to the text, and sets the color of the font */
 .header-elements {
     background-color: darkgrey;
     font-family:'Monaco', 'Times New Roman', 'Verdana', 'Lucida Console', 'Arial', sans-serif;
@@ -14,6 +21,9 @@ a {
     
 }
 
+/* Class Select & Element Selector */
+/* Places the three links inside the NavBar and extends the NavBar lower */
+/* Gives the header one proper padding and left margin in relation to the NavBar */
 .header-elements h1 {
     display: inline-block;
     height: 100px;
@@ -22,16 +32,23 @@ a {
     
 }
 
+/* Element Selector */
+/* Gives proper padding to the three links and proper margin in relation to the NavBar */
+/* Places the three links to the right of the page */
 nav {
     padding-top: 35px;
     margin-right: 20px;
     float: right;
-    font-family: 'Monaco', 'Times New Roman', 'Verdana', 'Lucida Console', 'Arial', sans-serif;
-    font-size: 20px;
 }
+
+/* Element Selector */
+/* Gets rid of the bullet points on the three links */
+/* Sets the three links inside the NavBar */
+/* Sets proper spacing between the three links and gives a font size */
 
 li {
     list-style-type: none;
     display: inline-block;
     margin-left: 25px;
+    font-size: 20px;
 }

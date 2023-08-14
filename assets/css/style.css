@@ -5,4 +5,5 @@ a {
 .header-elements {
     background-color: darkgrey;
     font-family:'Monaco', 'Times New Roman', 'Verdana', 'Lucida Console', 'Arial', sans-serif;
+    color: darkblue;
 }

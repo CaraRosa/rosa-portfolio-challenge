@@ -17,7 +17,11 @@ a {
 .header-elements {
     background-color: darkgrey;
     font-family:'Monaco', 'Times New Roman', 'Verdana', 'Lucida Console', 'Arial', sans-serif;
-    color: darkblue; 
+    color: darkblue;
+    /* added this CODE! */
+    display: flex;
+    
+
     
 }
 
@@ -36,10 +40,12 @@ a {
 /* Element Selector */
 /* Gives proper padding to the three links and proper margin in relation to the NavBar */
 /* Places the three links to the right of the page */
+/* Sets the height of the NavBar */
 nav {
     padding-top: 35px;
     margin-right: 20px;
     float: right;
+    height: 150px;
 }
 
 /* Element Selector */
@@ -52,6 +58,15 @@ li {
     display: inline-block;
     margin-left: 25px;
     font-size: 20px;
+    
+
+}
+/* NEW CODE */
+.header-elements nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    
+    
 
 }
 
@@ -71,6 +86,3 @@ img {
 body {
     background-color: beige;
 }
-
-
-

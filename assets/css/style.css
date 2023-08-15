@@ -14,11 +14,11 @@ a {
 
 /* Class Selector */
 /* Sets the background color, adds fonts to the text, and sets the color of the font */
+/* Makes the header one and the nav links responsive to screen size change */
 .header-elements {
     background-color: darkgrey;
     font-family:'Monaco', 'Times New Roman', 'Verdana', 'Lucida Console', 'Arial', sans-serif;
     color: darkblue;
-    /* added this CODE! */
     display: flex;
     
 
@@ -61,14 +61,6 @@ li {
     
 
 }
-/* NEW CODE */
-.header-elements nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    
-    
-
-}
 
 /* Set the height of the photo to be responsive to screen size change*/
 /* Sets the max width to be responsive to screen size change */
@@ -76,7 +68,7 @@ li {
 img {
     height: auto;
     max-width: 50%;
-    display: block;
+    display: flex;
     margin-left: auto;
     margin-right: auto;
 
@@ -85,4 +77,14 @@ img {
 /* Gives a background color of beige to the body element */
 body {
     background-color: beige;
+}
+
+/* Centers the header two and the paragraph */
+/* Gives a top margin to put space between the about content and the image above */
+/* Gives a background color of white to the about section */
+.about-me-page {
+    text-align: center;
+    margin-top: 20px;
+    background-color: white;
+    
 }

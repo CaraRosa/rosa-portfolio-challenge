@@ -88,3 +88,40 @@ body {
     background-color: white;
     
 }
+
+/* NEW CODE */
+/* Sets the border around the gallery */
+.gallery {
+    border: 1px solid #ccc;
+}
+
+/* Sets a grey border around the galleries when mouse hovers  */
+.gallery:hover {
+    border: 3px solid #777;
+}
+
+/* Sets the height and width of the gallery and images */
+.gallery img {
+    width: 100%;
+    height: 100px;
+    
+}
+
+/* Sets padding of the text description and aligns text center */
+.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+/* Sets the gallery in a table */
+/* Sets padding of gallery and images */
+/* Sets the width and height */
+.responsive {
+    padding: 0 5px;
+    float: left;
+    width: 50%;
+  }
+
+  img {
+    height: auto;
+  }

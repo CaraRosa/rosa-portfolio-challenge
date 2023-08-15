@@ -17,7 +17,7 @@ a {
 .header-elements {
     background-color: darkgrey;
     font-family:'Monaco', 'Times New Roman', 'Verdana', 'Lucida Console', 'Arial', sans-serif;
-    color: darkblue;
+    color: darkblue; 
     
 }
 
@@ -29,6 +29,7 @@ a {
     height: 100px;
     padding-top: 27px;
     margin-left: 15px;
+    
     
 }
 
@@ -51,4 +52,25 @@ li {
     display: inline-block;
     margin-left: 25px;
     font-size: 20px;
+
 }
+
+/* Set the height of the photo to be responsive to screen size change*/
+/* Sets the max width to be responsive to screen size change */
+/* Centers the image with margin left and margin right */
+img {
+    height: auto;
+    max-width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/* Gives a background color of beige to the body element */
+body {
+    background-color: beige;
+}
+
+
+

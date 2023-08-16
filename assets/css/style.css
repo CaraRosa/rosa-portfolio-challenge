@@ -27,6 +27,7 @@ a {
     /* When I added display flex, it adjusted the links and header to resizing the screen.*/
     /* However, it moved the links to the left of the website instead of the right. */
     display: flex;
+    
 }
 
 /* Class Select & Element Selector */
@@ -34,10 +35,8 @@ a {
 /* Gives the header one proper padding and left margin in relation to the NavBar */
 .header-elements h1 {
     display: inline-block;
-    height: 100px;
     padding-top: 27px;
     margin-left: 15px;
-    
     
 }
 
@@ -96,7 +95,7 @@ body {
 /* Gives a background color of white to the about section */
 .about-me-page {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 50px;
     background-color: white;
     padding: 20px;
     
@@ -104,7 +103,7 @@ body {
 
 #work {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 50px;
   background-color: white;
   padding: 20px;
 }
@@ -113,7 +112,6 @@ body {
 /* Sets the border around the gallery */
 .gallery {
     border: 1px solid #ccc;
-    
     
 }
 
@@ -157,7 +155,6 @@ body {
   
   }
 
-
   
   @media only screen and (max-width: 500px) {
     .responsive {
@@ -165,11 +162,6 @@ body {
     }
   }
 
-  /* styling for my photo */
-  img {
-    height: auto;
-    
-  }
 
   /* trying to set the links across the bottom of the page horizontally */
   /* .contact-me-page {
@@ -189,13 +181,14 @@ body {
   /* Sets padding around the text in relation to the white box */
   .contact-me-page {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 70px;
     background-color: white;
     padding: 20px;
   }
 
   .align-links {
     display: inline-block;
-    margin-left: 40px;
+    margin-left: 20px;
     font-size: 20px;
+    text-align: center;
   }

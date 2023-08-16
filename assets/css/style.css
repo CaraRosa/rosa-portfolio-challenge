@@ -14,14 +14,18 @@ main {
 /* Gets rid of the underline style on the three links */
 a {
     text-decoration: none;
-    color:purple;
+    color: darkblue;
+}
+
+a:hover {
+  color:blue;
 }
 
 /* Class Selector */
 /* Sets the background color, adds fonts to the text, and sets the color of the font */
 /* Makes the header one and the nav links responsive to screen size change */
 .header-elements {
-    background-color: darkgrey;
+    background-color: darkkhaki;
     font-family:'Monaco', 'Times New Roman', 'Verdana', 'Lucida Console', 'Arial', sans-serif;
     color: darkblue;
     /* When I added display flex, it adjusted the links and header to resizing the screen.*/
@@ -37,6 +41,7 @@ a {
     display: inline-block;
     padding-top: 27px;
     margin-left: 15px;
+    color:black;
     
 }
 
@@ -96,7 +101,7 @@ body {
 .about-me-page {
     text-align: center;
     margin-top: 50px;
-    background-color: white;
+    background-color: darkkhaki;
     padding: 20px;
     
 }
@@ -104,7 +109,7 @@ body {
 #work {
   text-align: center;
   margin-top: 50px;
-  background-color: white;
+  background-color: darkkhaki;
   padding: 20px;
 }
 
@@ -112,12 +117,13 @@ body {
 /* Sets the border around the gallery */
 .gallery {
     border: 1px solid #ccc;
+    background-color: darkkhaki;
     
 }
 
 /* Sets a grey border around the galleries when mouse hovers  */
 .gallery:hover {
-    border: 3px solid #777;
+    border: 3px solid gold;
 }
 
 /* Sets the height and width of the gallery and images */
@@ -152,7 +158,6 @@ body {
       flex: 0 0 50%;
       margin: 6px 0;
     }
-  
   }
 
   
@@ -162,13 +167,6 @@ body {
     }
   }
 
-
-  /* trying to set the links across the bottom of the page horizontally */
-  /* .contact-me-page {
-    text-align: center;
-    display: inline-block;
-   
-  } */
 
   /* trying to set the first website image to be larger */
   #larger-image {
@@ -182,7 +180,7 @@ body {
   .contact-me-page {
     text-align: center;
     margin-top: 70px;
-    background-color: white;
+    background-color: darkkhaki;
     padding: 20px;
   }
 

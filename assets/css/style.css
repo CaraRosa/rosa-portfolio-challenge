@@ -180,12 +180,22 @@ body {
 
   /* trying to set the first website image to be larger */
   #larger-image {
-    width: 60px;
+    /* max-width: 80%; */
   }
 
-  #contact-me {
+  /* Creates the white box */
+  /* Gives proper margin around the top of the element in relation to the gallery */
+  /* Sets background color */
+  /* Sets padding around the text in relation to the white box */
+  .contact-me-page {
     text-align: center;
     margin-top: 20px;
     background-color: white;
     padding: 20px;
+  }
+
+  .align-links {
+    display: inline-block;
+    margin-left: 40px;
+    font-size: 20px;
   }

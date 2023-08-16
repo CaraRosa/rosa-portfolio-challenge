@@ -24,10 +24,9 @@ a {
     background-color: darkgrey;
     font-family:'Monaco', 'Times New Roman', 'Verdana', 'Lucida Console', 'Arial', sans-serif;
     color: darkblue;
+    /* When I added display flex, it adjusted the links and header to resizing the screen.*/
+    /* However, it moved the links to the left of the website instead of the right. */
     display: flex;
-    
-
-    
 }
 
 /* Class Select & Element Selector */
@@ -95,10 +94,19 @@ body {
     
 }
 
+#work {
+  text-align: center;
+  margin-top: 20px;
+  background-color: white;
+  padding: 20px;
+}
+
 /* NEW CODE */
 /* Sets the border around the gallery */
 .gallery {
     border: 1px solid #ccc;
+    background-color: white;
+    
 }
 
 /* Sets a grey border around the galleries when mouse hovers  */
@@ -128,18 +136,13 @@ body {
 /* Sets the width and height */
 .responsive {
     padding: 0 5px;
-    /* float: left;
-    width: 50%; */
     flex: 0 0 100%;
   }
-
-  /* @media */
 
   /* makes the gallery responsive to window resizing */
   /* Code applies to tablet sizing and above */
   @media screen and (min-width: 768px) {
     .responsive {
-      /* width: 50%; */
       flex: 0 0 50%;
       margin: 6px 0;
     }
@@ -160,13 +163,20 @@ body {
   }
 
   /* trying to set the links across the bottom of the page horizontally */
-  .contact-me-page {
+  /* .contact-me-page {
     text-align: center;
     display: inline-block;
    
-  }
+  } */
 
   /* trying to set the first website image to be larger */
   #larger-image {
     width: 60px;
+  }
+
+  #contact-me {
+    text-align: center;
+    margin-top: 20px;
+    background-color: white;
+    padding: 20px;
   }

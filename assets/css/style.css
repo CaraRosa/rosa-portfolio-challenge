@@ -6,10 +6,15 @@
     margin: 0;
 }
 
+main {
+  max-width: 1250px;
+  margin: 0 auto;
+}
 /* Element Selector */
 /* Gets rid of the underline style on the three links */
 a {
     text-decoration: none;
+    color:purple;
 }
 
 /* Class Selector */
@@ -86,6 +91,7 @@ body {
     text-align: center;
     margin-top: 20px;
     background-color: white;
+    padding: 20px;
     
 }
 
@@ -103,7 +109,6 @@ body {
 /* Sets the height and width of the gallery and images */
 .gallery img {
     width: 100%;
-    height: 100px;
     
 }
 
@@ -113,15 +118,55 @@ body {
     text-align: center;
 }
 
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 /* Sets the gallery in a table */
 /* Sets padding of gallery and images */
 /* Sets the width and height */
 .responsive {
     padding: 0 5px;
-    float: left;
-    width: 50%;
+    /* float: left;
+    width: 50%; */
+    flex: 0 0 100%;
   }
 
+  /* @media */
+
+  /* makes the gallery responsive to window resizing */
+  /* Code applies to tablet sizing and above */
+  @media screen and (min-width: 768px) {
+    .responsive {
+      /* width: 50%; */
+      flex: 0 0 50%;
+      margin: 6px 0;
+    }
+  
+  }
+
+
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+
+  /* styling for my photo */
   img {
     height: auto;
+  }
+
+  /* trying to set the links across the bottom of the page horizontally */
+  .contact-me-page {
+    text-align: center;
+    display: inline-block;
+   
+  }
+
+  /* trying to set the first website image to be larger */
+  #larger-image {
+    width: 60px;
   }

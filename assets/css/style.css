@@ -78,6 +78,14 @@ img {
 
 }
 
+/* Makes the photo a circle */
+/* Sets space for top and bottom of the photo */
+.rounded-edges {
+  border-radius: 50%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 /* Gives a background color of beige to the body element */
 body {
     background-color: beige;
@@ -105,7 +113,7 @@ body {
 /* Sets the border around the gallery */
 .gallery {
     border: 1px solid #ccc;
-    background-color: white;
+    
     
 }
 
@@ -160,6 +168,7 @@ body {
   /* styling for my photo */
   img {
     height: auto;
+    
   }
 
   /* trying to set the links across the bottom of the page horizontally */

@@ -95,8 +95,8 @@ img {
 /* Makes the photo a circle */
 /* Sets space for top and bottom of the photo */
 .rounded-edges {
-  border-radius: 50%;
-  padding-top: 30px;
+  border-radius: 30%;
+  padding-top: 20px;
   padding-bottom: 30px;
 }
 

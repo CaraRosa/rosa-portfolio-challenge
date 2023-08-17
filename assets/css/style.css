@@ -1,22 +1,31 @@
 /* Universal Selector */
-/* Gets rid of the margin around the NavBar */
+/* Sets padding and border with box-sizing */
+/* Gets rid of the space around the NavBar and other elements*/
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+/* Element Selector */
+/* Sets max-width of the main element */
+/* Sets the top and bottom margin to have no space */
+/* Centers the elements */
 main {
   max-width: 1250px;
   margin: 0 auto;
 }
-/* Element Selector */
+
+/* Element Selectors */
 /* Gets rid of the underline style on the three links */
+/* Sets the link color to dark blue */
 a {
     text-decoration: none;
     color: darkblue;
 }
 
+/* Changes the dark blue link to a lighter blue when the user hovers the cursor over the links */
 a:hover {
   color:blue;
 }
@@ -32,11 +41,13 @@ a:hover {
     /* However, it moved the links to the left of the website instead of the right. */
     display: flex;
     
+    
 }
 
 /* Class Selector & Element Selector */
 /* Places the three links inside the NavBar and extends the NavBar lower */
 /* Gives the header one proper padding and left margin in relation to the NavBar */
+/* Sets the text color to black */
 .header-elements h1 {
     display: inline-block;
     padding-top: 27px;
@@ -45,9 +56,9 @@ a:hover {
     
 }
 
-/* Element Selector */
+/* Element Selectors */
 /* Gives proper padding to the three links and proper margin in relation to the NavBar */
-/* Places the three links to the right of the page */
+/* Places the three links to the right of the page. However, it is not working now */
 /* Sets the height of the NavBar */
 nav {
     padding-top: 35px;
@@ -56,9 +67,7 @@ nav {
     height: 150px;
 }
 
-/* Element Selector */
 /* Gets rid of the bullet points on the three links */
-/* Sets the three links inside the NavBar */
 /* Sets proper spacing between the three links and gives a font size */
 
 li {
@@ -66,11 +75,9 @@ li {
     display: inline-block;
     margin-left: 25px;
     font-size: 20px;
-    
-
 }
 
-/* Set the height of the photo to be responsive to screen size change*/
+/* Set the height of my photo to be responsive to screen size change*/
 /* Sets the max width to be responsive to screen size change */
 /* Centers the image with margin left and margin right */
 img {
@@ -82,6 +89,8 @@ img {
 
 }
 
+
+/* Class Selector */
 /* Makes the photo a circle */
 /* Sets space for top and bottom of the photo */
 .rounded-edges {
@@ -90,14 +99,17 @@ img {
   padding-bottom: 30px;
 }
 
-/* Gives a background color of beige to the body element */
+/* Element Selector */
+/* Gives a background color of beige to the body of the website */
 body {
     background-color: beige;
 }
 
+/* Class Selector */
 /* Centers the header two and the paragraph */
 /* Gives a top margin to put space between the about content and the image above */
-/* Gives a background color of white to the about section */
+/* Gives a background color of dark khaki to the about section */
+/* Sets proper spacing around the text in relation to the box */
 .about-me-page {
     text-align: center;
     margin-top: 50px;
@@ -106,6 +118,11 @@ body {
     
 }
 
+/* ID Selector */
+/* Centers the text */
+/* Sets space on the top of the box in relation to the About Me section */
+/* Sets a background color to the box of dark khaki */
+/* Sets padding around the text in relation to the box */
 #work {
   text-align: center;
   margin-top: 50px;
@@ -113,48 +130,53 @@ body {
   padding: 20px;
 }
 
-#larger-image {
-  padding-top: 0px;
-}
-
-/* NEW CODE */
-/* Sets the border around the gallery */
+/* Class Selectors */
+/* Sets the border around the gallery and the larger image */
+/* Styles the border */
+/* Sets a background color for the gallery of dark khaki */
 .gallery, .larger-image {
     border: 1px solid #ccc;
     background-color: darkkhaki;
     
 }
 
-/* Sets a gold border around the galleries when mouse hovers  */
+/* Sets a gold border around the galleries when user hovers the cursor over the gallery and image */
 .gallery:hover, .larger-image:hover {
     border: 3px solid gold;
 }
 
-/* Sets the width of the gallery and images */
-.gallery img {
+/* Class Selector and Element Selector */
+/* Sets the width of the gallery and their images and the larger image */
+.gallery img, .larger-image {
     width: 100%;
     
 }
 
+/* Class Selectors */
 /* Sets padding of the text description and aligns text center */
 .desc {
     padding: 15px;
     text-align: center;
 }
 
-.cards {
+/* Sets the gallery cards to line up horizontally by two */
+/* Sets the larger image to be responsive to screen change */
+.cards, .larger-image {
   display: flex;
   flex-wrap: wrap;
 }
 
-/* Sets the gallery in a table */
-/* Sets padding of gallery and images */
+/* Sets the gallery in a table arrangement */
+/* Sets space for the gallery and images and larger image in relation to each other and the size of the window */
 /* Sets the width and height */
+/* When the window is resized, the gallery will stack on top of each other using the full width of the screen*/
 .responsive {
     padding: 0 5px;
     flex: 0 0 100%;
   }
 
+  /* Media Query */
+  /* Class Selectors */
   /* makes the gallery responsive to window resizing */
   /* Code applies to tablet sizing and above */
   @media screen and (min-width: 768px) {
@@ -164,7 +186,7 @@ body {
     }
   }
 
-  
+  /* Do I need this? */
   @media only screen and (max-width: 500px) {
     .responsive {
       width: 100%;
@@ -181,6 +203,10 @@ body {
     background-color: darkkhaki;
     padding: 20px;
   }
+
+  /* Aligns the links horizontally across the footer */
+  /* Sets proper spacing between links */
+  /* Sets font size and centers the links */
 
   .align-links {
     display: inline-block;

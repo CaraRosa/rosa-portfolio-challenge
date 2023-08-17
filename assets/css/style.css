@@ -17,7 +17,7 @@ body {
 /* Sets the background color, adds fonts to the text, and sets the color of the font */
 /* Makes the header one and the nav links responsive to screen size change */
 .header-elements {
-  background-color: darkkhaki;
+  background-color: rosybrown;
   font-family:'Monaco', 'Times New Roman', 'Verdana', 'Lucida Console', 'Arial', sans-serif;
   color: darkblue;
   /* When I added display flex, it adjusted the links and header to resizing the screen.*/
@@ -47,7 +47,7 @@ nav {
   padding-top: 35px;
   margin-right: 20px;
   float: right;
-  height: 150px;
+  height: 130px;
 }
 
 /* Gets rid of the bullet points on the three links */

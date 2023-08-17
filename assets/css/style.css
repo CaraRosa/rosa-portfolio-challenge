@@ -1,7 +1,6 @@
 /* Universal Selector */
 /* Sets padding and border with box-sizing */
 /* Gets rid of the space around the NavBar and other elements*/
-
 * {
     box-sizing: border-box;
     padding: 0;
@@ -9,39 +8,23 @@
 }
 
 /* Element Selector */
-/* Sets max-width of the main element */
-/* Sets the top and bottom margin to have no space */
-/* Centers the elements */
-main {
-  max-width: 1250px;
-  margin: 0 auto;
-}
-
-/* Element Selectors */
-/* Gets rid of the underline style on the three links */
-/* Sets the link color to dark blue */
-a {
-    text-decoration: none;
-    color: darkblue;
-}
-
-/* Changes the dark blue link to a lighter blue when the user hovers the cursor over the links */
-a:hover {
-  color:blue;
+/* Gives a background color of beige to the body of the website */
+body {
+  background-color: beige;
 }
 
 /* Class Selector */
 /* Sets the background color, adds fonts to the text, and sets the color of the font */
 /* Makes the header one and the nav links responsive to screen size change */
 .header-elements {
-    background-color: darkkhaki;
-    font-family:'Monaco', 'Times New Roman', 'Verdana', 'Lucida Console', 'Arial', sans-serif;
-    color: darkblue;
-    /* When I added display flex, it adjusted the links and header to resizing the screen.*/
-    /* However, it moved the links to the left of the website instead of the right. */
-    display: flex;
-    
-    
+  background-color: darkkhaki;
+  font-family:'Monaco', 'Times New Roman', 'Verdana', 'Lucida Console', 'Arial', sans-serif;
+  color: darkblue;
+  /* When I added display flex, it adjusted the links and header to resizing the screen.*/
+  /* However, it moved the links to the left of the website instead of the right? */
+  display: flex;
+  /* How to make links stack on top of each other? */
+  
 }
 
 /* Class Selector & Element Selector */
@@ -49,11 +32,11 @@ a:hover {
 /* Gives the header one proper padding and left margin in relation to the NavBar */
 /* Sets the text color to black */
 .header-elements h1 {
-    display: inline-block;
-    padding-top: 27px;
-    margin-left: 15px;
-    color:black;
-    
+  display: inline-block;
+  padding-top: 27px;
+  margin-left: 15px;
+  color:black;
+  
 }
 
 /* Element Selectors */
@@ -61,20 +44,39 @@ a:hover {
 /* Places the three links to the right of the page. However, it is not working now */
 /* Sets the height of the NavBar */
 nav {
-    padding-top: 35px;
-    margin-right: 20px;
-    float: right;
-    height: 150px;
+  padding-top: 35px;
+  margin-right: 20px;
+  float: right;
+  height: 150px;
 }
 
 /* Gets rid of the bullet points on the three links */
 /* Sets proper spacing between the three links and gives a font size */
-
 li {
-    list-style-type: none;
-    display: inline-block;
-    margin-left: 25px;
-    font-size: 20px;
+  list-style-type: none;
+  display: inline-block;
+  margin-left: 25px;
+  font-size: 20px;
+}
+
+/* Gets rid of the underline style on all links */
+/* Sets all the links color to dark blue */
+a {
+  text-decoration: none;
+  color: darkblue;
+}
+
+/* Changes the dark blue links to a lighter blue when the user hovers the cursor over the links */
+a:hover {
+color:blue;
+}
+
+/* Sets max-width of the main element */
+/* Sets the top and bottom margin to have no space */
+/* Centers the elements */
+main {
+  max-width: 1250px;
+  margin: 0 auto;
 }
 
 /* Set the height of my photo to be responsive to screen size change*/
@@ -86,11 +88,10 @@ img {
     display: flex;
     margin-left: auto;
     margin-right: auto;
-
 }
 
 
-/* Class Selector */
+/* Class Selectors */
 /* Makes the photo a circle */
 /* Sets space for top and bottom of the photo */
 .rounded-edges {
@@ -99,13 +100,6 @@ img {
   padding-bottom: 30px;
 }
 
-/* Element Selector */
-/* Gives a background color of beige to the body of the website */
-body {
-    background-color: beige;
-}
-
-/* Class Selector */
 /* Centers the header two and the paragraph */
 /* Gives a top margin to put space between the about content and the image above */
 /* Gives a background color of dark khaki to the about section */
@@ -114,8 +108,7 @@ body {
     text-align: center;
     margin-top: 50px;
     background-color: darkkhaki;
-    padding: 20px;
-    
+    padding: 20px; 
 }
 
 /* ID Selector */
@@ -128,6 +121,13 @@ body {
   margin-top: 50px;
   background-color: darkkhaki;
   padding: 20px;
+}
+
+/* Class Selectors and Element Selector */
+/* Sets the width of the gallery and their images and the larger image */
+.gallery img, .larger-image {
+  width: 100%;
+  
 }
 
 /* Class Selectors */
@@ -145,18 +145,13 @@ body {
     border: 3px solid gold;
 }
 
-/* Class Selector and Element Selector */
-/* Sets the width of the gallery and their images and the larger image */
-.gallery img, .larger-image {
-    width: 100%;
-    
-}
-
-/* Class Selectors */
-/* Sets padding of the text description and aligns text center */
-.desc {
-    padding: 15px;
-    text-align: center;
+/* Sets the gallery in a table arrangement */
+/* Sets space for the gallery and images and larger image in relation to each other and the size of the window */
+/* Sets the width and height */
+/* When the window is resized, the gallery will stack on top of each other using the full width of the screen*/
+.responsive {
+  padding: 0 5px;
+  flex: 0 0 100%;
 }
 
 /* Sets the gallery cards to line up horizontally by two */
@@ -166,14 +161,11 @@ body {
   flex-wrap: wrap;
 }
 
-/* Sets the gallery in a table arrangement */
-/* Sets space for the gallery and images and larger image in relation to each other and the size of the window */
-/* Sets the width and height */
-/* When the window is resized, the gallery will stack on top of each other using the full width of the screen*/
-.responsive {
-    padding: 0 5px;
-    flex: 0 0 100%;
-  }
+/* Sets padding of the text description and aligns text center */
+.desc {
+    padding: 15px;
+    text-align: center;
+}
 
   /* Media Query */
   /* Class Selectors */
@@ -193,6 +185,7 @@ body {
     }
   }
 
+  /* Class Selectors */
   /* Creates the white box */
   /* Gives proper margin around the top of the element in relation to the gallery */
   /* Sets background color */

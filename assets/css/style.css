@@ -23,7 +23,6 @@ body {
   /* When I added display flex, it adjusted the links and header to resizing the screen.*/
   /* However, it moved the links to the left of the website instead of the right? */
   display: flex;
-  /* How to make links stack on top of each other? */
   
 }
 
@@ -33,7 +32,7 @@ body {
 /* Sets the text color to black */
 .header-elements h1 {
   display: inline-block;
-  padding-top: 27px;
+  padding-top: 1px;
   margin-left: 15px;
   color:black;
   
@@ -44,7 +43,7 @@ body {
 /* Places the three links to the right of the page. However, it is not working now */
 /* Sets the height of the NavBar */
 nav {
-  padding-top: 35px;
+  padding-top: 50px;
   margin-right: 20px;
   float: right;
   height: 130px;
@@ -179,11 +178,11 @@ img {
   }
 
   /* Do I need this? */
-  @media only screen and (max-width: 500px) {
+  /* @media only screen and (max-width: 500px) {
     .responsive {
       width: 100%;
     }
-  }
+  } */
 
   /* Class Selectors */
   /* Creates the white box */
@@ -206,4 +205,54 @@ img {
     margin-left: 20px;
     font-size: 20px;
     text-align: center;
+  }
+
+  /* NEW CODE */
+  @media (min-width: 300px) {
+    .header-elements,
+    ul {
+      display: flex;
+    }
+    .header-elements {
+      flex-direction: column;
+      align-items: center;
+        .header{
+      width: 100%;
+      margin: 0 auto;
+      max-width: 1150px;
+    }
+    }
+  
+  }
+  
+  @media (min-width: 1025px) {
+    .header-elements {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+  }
+
+  @media (min-width: 300px) {
+    .contact-me-page, .align-links {
+      display: flex;
+    }
+    .contact-me-page, .align-links {
+      flex-direction: column;
+      align-items: center;
+        .header{
+      width: 100%;
+      margin: 0 auto;
+      max-width: 1150px;
+    }
+    }
+  
+  }
+  
+  @media (min-width: 1025px) {
+    .contact-me-page, .align-links {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
   }

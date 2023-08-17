@@ -10,6 +10,11 @@ The Portfolio Website project challenges students to utilize flexbox, media quer
 
 No installation is necessary. The link to the website is here: [Link text](url).
 
+Below are the screenshots of my Portfolio website shown in my browser:
+![Alt text](./assets/images/firstPage.png)
+![Alt text](./assets/images/secondPage.png)
+![Alt text](./assets/images/thirdPage.png)
+
 ## Credits
 
 My instructor was able to help me make the gallery responsive with media query, centering the gallery and its content, and adding spacing around the About Me Section and My Work section. This code can be found in the style.css file in the subfolder css under the main folder assets. One of my gallery cards did not align in the gallery table properly. My instructor helped me to align it properly by deleting a part of my code and moving another part of code that was in the index.html file.

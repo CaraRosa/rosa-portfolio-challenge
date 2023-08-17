@@ -34,7 +34,7 @@ a:hover {
     
 }
 
-/* Class Select & Element Selector */
+/* Class Selector & Element Selector */
 /* Places the three links inside the NavBar and extends the NavBar lower */
 /* Gives the header one proper padding and left margin in relation to the NavBar */
 .header-elements h1 {
@@ -113,20 +113,24 @@ body {
   padding: 20px;
 }
 
+#larger-image {
+  padding-top: 0px;
+}
+
 /* NEW CODE */
 /* Sets the border around the gallery */
-.gallery {
+.gallery, .larger-image {
     border: 1px solid #ccc;
     background-color: darkkhaki;
     
 }
 
-/* Sets a grey border around the galleries when mouse hovers  */
-.gallery:hover {
+/* Sets a gold border around the galleries when mouse hovers  */
+.gallery:hover, .larger-image:hover {
     border: 3px solid gold;
 }
 
-/* Sets the height and width of the gallery and images */
+/* Sets the width of the gallery and images */
 .gallery img {
     width: 100%;
     
@@ -165,12 +169,6 @@ body {
     .responsive {
       width: 100%;
     }
-  }
-
-
-  /* trying to set the first website image to be larger */
-  #larger-image {
-    /* max-width: 80%; */
   }
 
   /* Creates the white box */

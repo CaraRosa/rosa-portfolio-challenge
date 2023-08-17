@@ -166,23 +166,6 @@ img {
     text-align: center;
 }
 
-  /* Media Query */
-  /* Class Selectors */
-  /* makes the gallery responsive to window resizing */
-  /* Code applies to tablet sizing and above */
-  @media screen and (min-width: 768px) {
-    .responsive {
-      flex: 0 0 50%;
-      margin: 6px 0;
-    }
-  }
-
-  /* Do I need this? */
-  /* @media only screen and (max-width: 500px) {
-    .responsive {
-      width: 100%;
-    }
-  } */
 
   /* Class Selectors */
   /* Creates the white box */
@@ -199,7 +182,6 @@ img {
   /* Aligns the links horizontally across the footer */
   /* Sets proper spacing between links */
   /* Sets font size and centers the links */
-
   .align-links {
     display: inline-block;
     margin-left: 20px;
@@ -207,7 +189,21 @@ img {
     text-align: center;
   }
 
-  /* NEW CODE */
+
+   /* Media Queries */
+  /* Class Selectors */
+  /* makes the gallery responsive to window resizing */
+  /* Code applies to tablet sizing and above */
+  @media screen and (min-width: 768px) {
+    .responsive {
+      flex: 0 0 50%;
+      margin: 6px 0;
+    }
+  }
+
+  /* Class Selectors */
+  /* Makes the header elements responsive to screen change */
+  /* Header one and the three links form a centered column when the screen shrinks */
   @media (min-width: 300px) {
     .header-elements,
     ul {
@@ -225,6 +221,7 @@ img {
   
   }
   
+  /* Sets the header one and links across the page horizontally when the screen is a certain width */
   @media (min-width: 1025px) {
     .header-elements {
       flex-direction: row;
@@ -233,6 +230,7 @@ img {
   
   }
 
+  /* Adjusts the header three and the three contact links to form a centered column when the screen shrinks */
   @media (min-width: 300px) {
     .contact-me-page, .align-links {
       display: flex;
@@ -249,6 +247,7 @@ img {
   
   }
   
+  /* Sets the header three and the three contact links horizontally across the page when the window size is stretched out */
   @media (min-width: 1025px) {
     .contact-me-page, .align-links {
       flex-direction: row;

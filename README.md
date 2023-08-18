@@ -8,7 +8,7 @@ The Portfolio Website project challenges students to utilize flexbox, media quer
 
 ## Installation
 
-No installation is necessary. The link to the website is here: [Link text](url).
+No installation is necessary. The link to the website is here: [Portfolio Website](https://cararosa.github.io/rosa-portfolio-challenge/).
 
 Below are the screenshots of my Portfolio website shown in my browser:
 ![Alt text](./assets/images/firstPage.png)

@@ -17,7 +17,7 @@ No installation is necessary. The link to the website is here: [Portfolio Websit
 Below are the screenshots of my Portfolio website shown in my browser:
 ![Alt text](./assets/images/firstPage.png)
 ![Alt text](./assets/images/secondPage.png)
-![Alt text](./assets/images/thirdPage.png)
+![Alt text](./assets/images/ThirdPage.png)
 
 ## Credits
 
